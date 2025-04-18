@@ -1,5 +1,5 @@
 
-# 🤖 AI Code Authorship Classification
+# 🤖 Detecting AI-Generated code vs Human written
 
 ## 🔍 Overview
 
@@ -69,10 +69,8 @@ import json
 
 ## ⚙️ How to Run
 
-1. Download `data.jsonl` from the official [GitHub dataset repo](https://github.com/marcoedingen/chatgpt-code-detection).
-2. Place it in your working directory.
-3. Open `project_Cs6890_PLP.ipynb` and run all cells.
-4. The notebook will:
+1. Open `project_Cs6890_PLP.ipynb` and run all cells.
+2. The notebook will:
    - Train and validate models using stratified 2-fold cross-validation
    - Display classification metrics (Accuracy, Precision, Recall, F1-score, AUC)
    - Visualize embeddings using t-SNE and PCA
@@ -89,22 +87,8 @@ Models are evaluated using:
 - **F1 Score**
 - **AUC** (Area Under the ROC Curve)
 
-Contrastive learning models use a combination of triplet loss and binary cross-entropy to improve class separation.
-
----
-
-## ✅ Final Output
-
-Running the notebook produces:
-- Cleaned and vectorized code features
-- Evaluation metrics per fold
-- Mean ROC curve across folds
-- 2D embedding visualizations using t-SNE or PCA
-- A modular pipeline for AI-code detection
-
 ---
 
 ## 🧠 Author & Notes
 
-Developed for **CS6890 - Programming Language Principles (PLP)**  
-Focus: Fair detection of AI code generation in student programming submissions
+Developed for **CS6890 - Programming Language Principles (PLP) at Utah State University**  
